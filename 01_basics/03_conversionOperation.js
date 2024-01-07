@@ -41,3 +41,9 @@ console.log(Boolean(loggedIn)); //  true
 */ 
 
 
+// Operations
+console.log(1 + 2);
+console.log(1 + "2");
+console.log("1" + 2);
+console.log( "1" + 2 + 2);  // Considered first values 122
+console.log( 1 + 2 + "2");  // 32
