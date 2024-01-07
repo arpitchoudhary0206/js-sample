@@ -44,3 +44,23 @@ const myFunction = function(){
 console.log(typeof myFunction);  // Object function
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// Primitive (Stack), Non Primivitve (Heap)
+
+let a=100
+b = a
+
+// b will have copy of a
+
+let user1 = {
+    email: "abc@gmail.com",
+    pass: "12345"
+}
+
+user2 = user1
+user1.email = "xyz@gmail.com"
+
+// d will have refernce of c that means any change in any of them reflects to both of them since this data {} gets stored in heap.
+
+console.log(user1);
+console.log(user2);
